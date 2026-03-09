@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="greet()">
+        click here
+    </button>
+    <!--p id="p1"></p>
+    <button onclick="document.getElementById('p1').innerHTML=Date()">
+        what is time now??
+    </button-->
+    <input id="k" type="text" placeholder="press any key here">
+    <p id="demo"></p>
+
+    <script>
+    /*function greet(){
+        alert('welcome to site');
+    }*/
+   const k=document.getElementById('k');
+   k.addEventListener("keydown",function(event)
+   {
+    document.getElementById("demo").innerHTML="You pressed ::"+event.key;
+   });
+    </script>   
+</body>
+</html>
